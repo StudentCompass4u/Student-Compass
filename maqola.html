@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقولة اليوم - بوصلة القاسمي</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            direction: rtl;
+            background: url('https://images.unsplash.com/photo-1721714933699-1a7650a79754?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHklMjBkZXNrfGVufDB8fDB8fHww') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+            text-align: center;
+        }
+        .quote-box {
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+        .quote-box h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .quote-box p {
+            font-size: 22px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .quote-box button {
+            background-color: #fff;
+            color: #000;
+            font-size: 18px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .quote-box button:hover {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+<style>
+nav {
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+nav a {
+    display:inline-block;
+    margin:0 10px;
+    padding:10px 20px;
+    color:white;
+    border:2px solid white;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+nav a:hover {
+    background:white;
+    color:#333;
+}
+nav a.active {
+    background:white;
+    color:#333;
+}
+</style>
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="about us.html">من نحن</a>
+<a href="khadamatna.html">خدماتنا</a>
+<a href="maqola.html">مقولة اليوم</a>
+<a href="contactus.html">تواصل معنا</a>
+</nav>
+
+<header>
+    
+</header>
+<div class="content">
+    <div class="quote-box">
+        <h1>مقولة اليوم</h1>
+        <p id="quote">النجاح لا يأتي صدفة، بل هو نتيجة التصميم والعمل الجاد.</p>
+        <button onclick="newQuote()">تحديث المقولة</button>
+    </div>
+</div>
+<script>
+    const quotes = [
+        "النجاح لا يأتي صدفة، بل هو نتيجة التصميم والعمل الجاد.",
+        "المثابرة هي الطريق إلى التميز.",
+        "التعليم هو السلاح الأقوى لتغيير العالم.",
+        "اصبر وتحمّل، فكل خطوة تقربك من هدفك.",
+        "الإصرار هو مفتاح تحقيق الأحلام.",
+        "لا تتوقف عند الفشل، فهو بداية النجاح.",
+        "العلم نور، والعمل به رفعة.",
+        "اجعل طموحك أكبر من أعذارك.",
+        "من جد وجد ومن زرع حصد.",
+        "كل يوم فرصة جديدة للتعلم والنجاح.",
+        "التعليم يصنع الفرق ويغير المستقبل.",
+        "ابدأ بخطوة اليوم قبل الغد.",
+        "اجعل التعلم عادة يومية لا تنتهي.",
+        "اعمل بصمت ودع نجاحك يتحدث.",
+        "الصبر مفتاح كل الإنجازات.",
+        "التخطيط نصف النجاح.",
+        "اعرف هدفك وامضِ نحوه بلا تردد.",
+        "الإبداع يولد من التحديات.",
+        "الوقت أثمن ما تملك، فلا تهدره.",
+        "استمر في التعلم لتبقى في القمة."
+    ];
+    function newQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote").innerText = quotes[randomIndex];
+    }
+</script>
+</body>
+</html>
