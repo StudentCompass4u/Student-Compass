@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الطالب - بوصلة القاسمي</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            direction: rtl;
+            background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        nav a {
+            display:inline-block;
+            margin:0 10px;
+            padding:10px 20px;
+            color:white;
+            border:2px solid white;
+            border-radius:8px;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover {
+            background:white;
+            color:#333;
+        }
+
+        nav a.active {
+            background:white;
+            color:#333;
+        }
+
+        .content {
+            margin: 30px auto;
+            padding: 30px;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            width: 30%;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: right;
+            color: #222;
+        }
+
+        .service-box h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #111;
+            text-align: center;
+        }
+
+        .service-box p, .service-box ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #111;
+        }
+
+        ul {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        @media(max-width: 900px) {
+            .service-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="aboutus.html">من نحن</a>
+    <a href="khadamatna.html">خدماتنا</a>
+    <a href="maqola.html">مقولة اليوم</a>
+    <a href="contactus.html">تواصل معنا</a>
+    <a href="#student-guide" class="active">دليل الطالب</a>
+</nav>
+
+<div class="content" id="student-guide">
+    <h1>📘 دليل الطالب</h1>
+    <div class="services">
+        
+        <!-- دليل الطباعة -->
+        <div class="service-box">
+            <h2>📄 دليل الطباعة</h2>
+            <ul>
+                <li>يتم تجهيز الملف على حاسوب في الكلية.</li>
+                <li>عند النقر على زر الطباعة، أدخل البريد الإلكتروني أو رقم الهاتف.</li>
+                <li>اذهب لأي طابعة في الكلية.</li>
+                <li>أدخل كود الطباعة على الشاشة.</li>
+                <li>اختر "طباعة" واضغط على الملف.</li>
+                <li>انتظر حتى تتم الطباعة.</li>
+            </ul>
+            <p>يمكنك أيضًا استعمال بطاقة الطالب للطباعة.</p>
+        </div>
+
+        <!-- أخلاقيات الأكاديمية -->
+        <div class="service-box">
+            <h2>📚 أخلاقيات الأكاديمية</h2>
+            <ul>
+                <li>لا يمكن عمل نفس الوظيفة لمساقين مختلفين (مخالفة أكاديمية).</li>
+                <li>التواصل مع المحاضرين عبر البريد الإلكتروني بأسلوب لبق.</li>
+                <li>لا يسمح باستعمال شعار الكلية في حملات خارجية بدون موافقة.</li>
+                <li>عدم مشاركة معلومات عن المحاضرين بين الطلاب.</li>
+                <li>إذا تغيب الطالب أكثر من 3 مرات، يحق للمحاضر فصله.</li>
+            </ul>
+        </div>
+
+        <!-- التوصيات -->
+        <div class="service-box">
+            <h2>✅ التوصيات</h2>
+            <ul>
+                <li>تأخر يوم بالدفع يحجب المودل.</li>
+                <li>استخدامات بطاقة الطالب:
+                    <ul>
+                        <li>الطباعة</li>
+                        <li>الدخول للامتحانات</li>
+                        <li>تخفيضات للطلاب (مطاعم مثل أفندينا، كافيتيريا سيف)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- دليل الغرف -->
+        <div class="service-box" style="width:95%;">
+            <h2>🏫 دليل الغرف في الأكاديمية</h2>
+            <p>يوجد في الكلية 3 أبنية:</p>
+            <ul>
+                <li><strong>المبنى الرئيسي (رقم 4):</strong> مدخل الكلية، الطابق السفلي فيه كافيتيريا وصالة رياضية ومركز محاكاة. الطابق الثالث فيه مصلى للنساء.</li>
+                <li><strong>المبنى رقم 1:</strong> غرف السكرتاريا ومركز سويا.</li>
+                <li><strong>المبنى المقابل:</strong> مكتبة وغرف الحاسوب تحت المكتبة.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
